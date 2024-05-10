@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
-    basePath: "/data-science-core-website",
+    basePath: "",
     images: {
         unoptimized: true,
     },
