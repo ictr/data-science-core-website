@@ -1,12 +1,13 @@
-import Link from "next/link";
+import ProjectsComp from "@/components/Projects";
+import { projectsData } from "@/lib/projects";
 
 export default function Projects() {
   return (
     <>
-      <h1>projects page</h1>
-      <ul className="list-disc list-inside">
-        <li><Link target="_blank" href="http://google.com/" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">NLP Web Interface</Link></li>
-      </ul>
+      <div className="text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Projects</h2>
+      </div>
+      <ProjectsComp projectsData={ projectsData } />
     </>
   );
 }
