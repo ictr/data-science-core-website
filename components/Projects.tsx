@@ -20,7 +20,6 @@ export default function ProjectsComp({ projectsData }: ProjectsProps) {
           <Link
             href={proj.link}
             target="blank"
-            className="bg-blue-800 flex items-center justify-center shadow rounded-full h-8 w-8 text-white"
             key={index}
           >
             <div
