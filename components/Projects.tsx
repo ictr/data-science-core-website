@@ -17,11 +17,16 @@ export default function ProjectsComp({ projectsData }: ProjectsProps) {
     <div className="container mx-auto">
       <div className="grid gap-6 w-full px-10 mt-10 md:grid-cols-2 xl:grid-cols-4">
         {projectsData.map((proj, index) => (
-          <Link href={proj.link} target="blank">
-            <div className="flex flex-col justify-center px-8 mx-6 my-12 text-center rounded-md shadow-md bg-white text-gray-800"
-              key={index}>
-              <Image className="self-center flex-shrink-0 -mt-12 bg-center bg-cover bg-gray-500 h-24 w-72 shadow-md" src={
-                proj.imageUrl} alt="" height={96} width={288} />
+          <Link
+            href={proj.link}
+            target="blank"
+            className="bg-blue-800 flex items-center justify-center shadow rounded-full h-8 w-8 text-white"
+            key={index}
+          >
+            <div
+              className="flex flex-col justify-center px-8 mx-6 my-12 text-center rounded-md shadow-md bg-white text-gray-800"
+            >
+              <Image className="self-center flex-shrink-0 -mt-12 bg-center bg-cover bg-gray-500 h-24 w-72 shadow-md" src={proj.imageUrl} alt="" height={96} width={288} />
               <div className="flex-1 my-4">
                 <p className="text-xl font-bold">{proj.name}</p>
                 <p className="text-md text-left">{proj.description}</p>
