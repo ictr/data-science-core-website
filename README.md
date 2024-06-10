@@ -2,7 +2,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, it is best to create a separate envionment for website development.
+
+```bash
+conda create --name website python=3.11
+conda activate website
+```
+
+install needed tools,
+```bash
+conda install -c conda-forge nodejs yarn
+npm install next
+
+```
+
+then run the development server:
 
 ```bash
 npm run dev
