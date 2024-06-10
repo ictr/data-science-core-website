@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+header a.logo {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  z-index: 999;
+  left: 15px;
+  /* margin-top: 20px; */
+  background-image: url(https://www.bcm.edu/themes/custom/bcm_bootstrap_subtheme/images/BCM-90x90.svg)
+}
+
+header .main-title {
+  position: relative;
+  margin-left: 50px;
+}
