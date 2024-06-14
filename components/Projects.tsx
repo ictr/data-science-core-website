@@ -6,6 +6,7 @@ import { StaticImageData } from "next/image";
 interface ProjectsProps {
   projectsData: {
     name: string;
+    intranetOnly: boolean,
     description: string,
     link: string,
     imageUrl: string | StaticImageData,
@@ -28,6 +29,7 @@ export default function ProjectsComp({ projectsData }: ProjectsProps) {
               <Image className="self-center flex-shrink-0 -mt-12 bg-center bg-cover bg-gray-500 h-24 w-72 shadow-md" src={proj.imageUrl} alt="" height={96} width={288} />
               <div className="flex-1 my-4">
                 <p className="text-xl font-bold">{proj.name}</p>
+                { proj.intranetOnly ? <p className="text-red-800">(Accessible via BCM Intranet)</p> : "" }
                 <p className="text-md text-left">{proj.description}</p>
               </div>
             </div>
