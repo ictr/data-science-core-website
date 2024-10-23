@@ -12,7 +12,7 @@ export const projectsData = [
   {
     name: "Research and Engineering Studio",
     intranetOnly: true,
-    description: "An platform that allows BCM users to start and stop desktop/servers with customized software images and AWS instance types.",
+    description: "A platform that allows BCM users to start and stop desktop/servers with customized software images and AWS instance types.",
     imageUrl: res_web_interface_screenshot,
     link: "https://res.ictr-bcm.org/",
   },

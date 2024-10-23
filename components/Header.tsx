@@ -8,7 +8,7 @@ export default function HeaderComp() {
         <div className="main-title text-xl">Data Science Core</div>
         <div className="space-x-4">
           <Link href="/">Home</Link>
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects">Services</Link>
           <Link href="/about">About</Link>
         </div>
       </nav>
